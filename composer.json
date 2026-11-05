@@ -1,0 +1,49 @@
+{
+  "name": "uzapoint/digitax-client",
+  "description": "DigiTax (KRA eTIMS) v2 API client for Uzapoint Laravel microservices",
+  "keywords": ["laravel", "digitax", "etims", "kra", "kenya", "tax", "uzapoint"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Caleb Chege",
+      "email": "caleb98kymez@gmail.com",
+      "homepage": "https://github.com/caleb98kymez",
+      "role": "Technical Lead"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Uzapoint\\Digitax\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Uzapoint\\Digitax\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^11.0|^12.0|^13.0",
+    "illuminate/contracts": "^11.0|^12.0|^13.0",
+    "illuminate/http": "^11.0|^12.0|^13.0",
+    "illuminate/database": "^11.0|^12.0|^13.0",
+    "guzzlehttp/guzzle": "^7.8"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0|^10.0|^11.0",
+    "phpunit/phpunit": "^11.0|^12.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Uzapoint\\Digitax\\DigitaxServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
